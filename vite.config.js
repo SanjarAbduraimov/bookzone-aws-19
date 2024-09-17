@@ -1,9 +1,9 @@
-import { defineConfig } from 'vite';
+import { defineConfig } from "vite";
 
 export default defineConfig({
-  root: 'src/',
+  root: "src/",
   server: {
-    open: '/pages/',
-    port: 3000
+    open: "/pages/",
+    port: 3000,
   },
 });
