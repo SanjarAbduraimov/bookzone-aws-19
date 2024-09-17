@@ -2,9 +2,9 @@ import { defineConfig } from 'vite';
 import path from 'path';
 
 export default defineConfig({
-  root: 'src/', 
+  root: 'src/',
   server: {
-    open: '/', 
+    open: '/pages/',
     port: 3000
   },
 });
