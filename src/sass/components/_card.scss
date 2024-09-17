@@ -1,5 +1,71 @@
-.card {
-    background: red;
-    width: 100px;
-    height: 100px;
+body{
+    background-color: rgba(25, 25, 25, 1);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+.search__wrapper{
+    max-width: 850px;
+    margin: 20px auto;
+    padding: 50px 50px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 4px 77px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+}
+.search-box__title, h1{
+    color: rgba(201, 172, 140, 1);
+    margin: 0;
+}
+.input__wrapper{
+    background-color: rgba(64, 64, 64, 1);
+    border-radius: 15px;
+}
+.search-input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    gap: 15px;
+}
+.input__wrapper input{
+    width: 609px;
+    padding: 14px;
+    color: #fff;
+    border-radius: 15px;
+    background-color: transparent;
+    outline: none;
+    border: 0;
+    cursor: pointer;
+}
+.search-input button{
+    padding: 13px 35px;
+    border-radius: 15px;
+    outline: none;
+    border: 0;
+    color: rgba(60, 39, 16, 1);
+    background-color: rgba(201, 172, 140, 1);
+    cursor: pointer;
+}
+// poet cards started here!!
+.main-card__wrapper{
+    padding: 0 80px;
+    display: flex;
+    background-color: red;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+.poet-name h1{
+    font-size: 12px;
+}
+.card-poet-img{
+    width: 173px;
+}
+.card-poet-img img{
+    width: 100%;
+}
+
