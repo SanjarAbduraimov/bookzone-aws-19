@@ -1,3 +1,4 @@
+
 body{
     background-color: rgba(25, 25, 25, 1);
     margin: 0;
@@ -115,17 +116,59 @@ body{
     margin-left: 102px;
     margin-top: -30px;
 }
-// start book's card
-.book-cards{
-    display: flex;
-    width: 100%;
+
+
+.card__wrapper{
+    margin: 20px;
 }
-.books_cards-wrapper{
-    
+.book-cards{
+    margin-left: 29px;
 }
 .books-img{
     width: 100%;
 }
-.book-title{
+.book-title h1{
+    width: 100%;
+    font-size: 27px;
+    margin: 10px 0 0 0;
+    font-weight: 400;
+}
+.written-by p{
+    margin: 3px 0;
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.6);
+    font-family: 'Visuelt Pro', sans-serif;
+}
+.fa-star{
+    color: #fff;
+    margin: 3px 0;
+}
+.book-rate span{
+    margin: 50px 0;
+    font-size: 12px;
+    margin: 3px 0;
+    font-family: 'Visuelt Pro', sans-serif;
+    color: rgba(255, 255, 255, 0.6);
+}
+.quotes-from-book{
+    padding: 30px 40px;
+    border-radius: 15px;
+    position: relative;
+    background: linear-gradient(263.94deg, #161616 0%, #1E1E1E 98.06%);
+}
+.quote-text p{
+    color: rgba(255, 255, 255, 1);
+    font-size: 16px;
+    line-height: 24.16px;
+    z-index: 2;
+}
+.quote-card-back-img{
+    width: 180px;
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    right: 0;
+}
+.quote-card-back-img img{
     width: 100%;
 }
