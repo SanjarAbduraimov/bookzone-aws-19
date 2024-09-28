@@ -1,4 +1,3 @@
-
 body{
     background-color: rgba(25, 25, 25, 1);
     margin: 0;
@@ -12,7 +11,6 @@ button{
 }
 // poet cards started here!!
 .main-card__wrapper{
-    padding: 0 80px;
     display: flex;
     flex-wrap: wrap;
     width: 100%;
@@ -227,20 +225,4 @@ button{
         font-family: 'Stienbeck', sans-serif;
         border-radius: 5px;
     }
-}
-
-
-.profile__wrapper{
-    padding: 30px 40px;
-}
-.profile-card{
-    width: 100%;
-    background: radial-gradient(85.43% 1678.66% at 98.07% 50%, #2F2F2F 0%, #171717 100%);
-    box-shadow: 0px 4px 73px 0px rgba(0, 0, 0, 0.25);
-    position: relative;
-}
-.profile-card-back-img{
-    position: absolute;
-    right: 1px;
-    z-index: 2;
 }

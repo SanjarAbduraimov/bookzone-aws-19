@@ -1,0 +1,50 @@
+<link rel="stylesheet" href="../sass/components/_header.scss">
+
+  <header>
+    <nav class="navbar">
+      <div class="logo">Badiiyat</div>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+        <!-- Profile dropdown -->
+        <li class="profile-dropdown">
+          <a href="#" class="profile">Profile</a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Account</a></li>
+            <li><a href="#">Settings</a></li>
+            <li><a href="#">Logout</a></li>
+          </ul>
+        </li>
+      </ul>
+      <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+    </nav>
+  </header>
+
+  <script>
+    const burger = document.querySelector('.burger');
+const nav = document.querySelector('.nav-links');
+const navLinks = document.querySelectorAll('.nav-links li');
+
+burger.addEventListener('click', () => {
+  nav.classList.toggle('nav-active');
+  
+  // Animate Links
+  navLinks.forEach((link, index) => {
+    if (link.style.animation) {
+      link.style.animation = '';
+    } else {
+      link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.3}s`;
+    }
+  });
+
+  // Burger Animation
+  burger.classList.toggle('toggle');
+});
+
+  </script>

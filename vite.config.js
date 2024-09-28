@@ -1,4 +1,5 @@
 import { defineConfig } from "vite";
+import Pages from "vite-plugin-pages";
 
 export default defineConfig({
   root: "src/",
@@ -6,4 +7,7 @@ export default defineConfig({
     open: "/pages/",
     port: 3000,
   },
+  plugins: [
+    Pages(),
+  ],
 });
