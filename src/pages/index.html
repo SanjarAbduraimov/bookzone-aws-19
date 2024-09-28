@@ -4,11 +4,43 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="/src/sass/main.scss">
   </head>
 
   <body>
-    <h1>Hello world!</h1>
-    <div class="card">salom </div>
+    <header>
+      <nav class="navbar">
+        <div class="logo">Badiiyat</div>
+        <ul class="nav-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact</a></li>
+          <!-- Profile dropdown -->
+          <li class="profile-dropdown">
+            <a href="#" class="profile">Profile</a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Account</a></li>
+              <li><a href="#">Settings</a></li>
+              <li><a href="#">Logout</a></li>
+            </ul>
+          </li>
+        </ul>
+        <div class="burger">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+      </nav>
+    </header>
+    <section class="book__list">
+      <div class="container">
+        <div class="row">
+          <div class="col"></div>
+        </div>
+      </div>
+    </section>
     <script type="module" src="/js/app.js"></script>
+    <script src="/src/sass/vendors/header.js"></script>
   </body>
 </html>
