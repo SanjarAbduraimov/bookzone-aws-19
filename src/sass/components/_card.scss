@@ -1,3 +1,12 @@
+$color:rgba(255, 255, 255, 1);
+$card-bc-color:linear-gradient(209.09deg, #191919 -1.68%, #212121 135.36%);
+$percentage-bc-color:  rgba(168, 127, 82, 1);
+$font-fm:'Visuelt Pro', sans-serif;
+$font-size:13px;
+$font-Stienbeck:'Stienbeck', sans-serif;
+$btn-color:rgba(60, 39, 16, 1);
+$btn-bc-color:rgba(201, 172, 140, 1)
+rgba(201, 172, 140, 1);
 body{
     background-color: rgba(25, 25, 25, 1);
     margin: 0;
@@ -33,7 +42,7 @@ button{
     width: 180px;
     margin-left: 20px;
     border-radius: 15px;
-    background: linear-gradient(209.09deg, #191919 -1.68%, #212121 135.36%);
+    background: $card-bc-color;
     position: relative;
 }
 .poet-name h1{
@@ -44,7 +53,7 @@ button{
 }
 .born{
     text-align: center;
-    color: rgba(255, 255, 255, 0.6);
+    color: $color;
     font-size: 15px;
     margin-top: 5px;
 }
@@ -53,7 +62,7 @@ button{
     align-items: center;
     margin-bottom: 13px;
     gap: 10px;
-    color: rgba(255, 255, 255, 1);
+    color:$color;
 }
 .books-auidos{
     padding: 10px 15px;
@@ -94,7 +103,7 @@ button{
     margin: 3px 0;
     font-size: 13px;
     color: rgba(255, 255, 255, 0.6);
-    font-family: 'Visuelt Pro', sans-serif;
+    font-family: $font-fm;
 }
 .fa-star{
     color: #fff;
@@ -102,9 +111,9 @@ button{
 }
 .book-rate span{
     margin: 50px 0;
-    font-size: 12px;
+    font-size: $font-fm;
     margin: 3px 0;
-    font-family: 'Visuelt Pro', sans-serif;
+    font-family: $font-fm;
     color: rgba(255, 255, 255, 0.6);
 }
 .quotes-from-book{
@@ -114,11 +123,11 @@ button{
     background: linear-gradient(263.94deg, #161616 0%, #1E1E1E 98.06%);
 }
 .quote-text p{
-    color: rgba(255, 255, 255, 1);
+    color: $color;
     font-size: 16px;
     line-height: 24.16px;
     font-weight: 400;
-    font-family: "Steinbeck",sans-serif;    
+    font-family: $font-Stienbeck;    
 }
 .quote-card-back-img{
     width: 180px;
@@ -151,7 +160,7 @@ button{
    h1{
      font-size: 24px;
     font-weight: 400;
-    font-family: 'Steinbeck', sans-serif;
+    font-family: $font-Stienbeck;
    }
     .bxs-grid-alt{
         color: rgba(255, 255, 255, 0.3);
@@ -177,7 +186,7 @@ button{
     h1{
         font-size: 1rem;
         color: #fff;
-        font-family: 'Stienbeck', sans-serif;
+        font-family: $font-Stienbeck;
     }
     span{
         color: rgba(255, 255, 255, 0.6);
@@ -187,7 +196,7 @@ button{
     padding: 10px 20px;
     display: flex;
     gap: 10px;
-    background-color: rgba(201, 172, 140, 1);
+    background-color: $card-bc-color;
 }
 .percentage__wrapper{
     width: 100%;
@@ -198,7 +207,8 @@ button{
 .percentage-color{
     width: 30%;
      height: 100%; 
-     background-color: rgba(168, 127, 82, 1); border-radius: 7px;
+     background-color:$percentage-bc-color; 
+     border-radius: 7px;
 }
 .rating-div{
     display: flex;
@@ -208,7 +218,7 @@ button{
         border:0;
         outline: none;
         border-radius: 3px;
-        color:rgba(60, 39, 16, 1);
+        color:$btn-color;
     }
 }
 .see-all-btn__wrapper{
@@ -220,9 +230,16 @@ button{
     button{
         width: 100%;
         padding: 20px;
-        background-color: rgba(201, 172, 140, 1);
+        background-color: $card-bc-color;
         font-size: 22px;
-        font-family: 'Stienbeck', sans-serif;
+        font-family: $font-Stienbeck;
         border-radius: 5px;
     }
 }
+
+.card {
+    background: red;
+    width: 100px;
+    height: 100px;
+}
+
