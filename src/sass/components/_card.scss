@@ -5,6 +5,7 @@ $font-fm:'Visuelt Pro', sans-serif;
 $font-size:13px;
 $font-Stienbeck:'Stienbeck', sans-serif;
 $btn-color:rgba(60, 39, 16, 1);
+$card-title-color: rgba(201, 172, 140, 1);
 $btn-bc-color:rgba(201, 172, 140, 1)
 rgba(201, 172, 140, 1);
 body{
@@ -19,7 +20,7 @@ button{
     outline: none;
 }
 // poet cards started here!!
-.main-card__wrapper{
+.card-body{
     display: flex;
     flex-wrap: wrap;
     width: 100%;
@@ -30,30 +31,32 @@ button{
 .main_content{
     display: flex;
 }
-.card-poet-img{
+.card-img{
     width: 100%;
     z-index: 1;
     position: relative;
 }
-.card-poet-img img{
+.card-img img{
     width: 100%;
 }
-.card{
+.card__body{
     width: 180px;
     margin-left: 20px;
     border-radius: 15px;
     background: $card-bc-color;
     position: relative;
+    overflow: hidden;
 }
-.poet-name h1{
+.card__title h1{
     margin: 10px 0 0 0;
     text-align: center;
+    color: $card-title-color;
     font-size: 20px;
     font-weight: 400;
 }
-.born{
+.card__text{
     text-align: center;
-    color: $color;
+    color: rgba(255, 255, 255, 0.6);
     font-size: 15px;
     margin-top: 5px;
 }
@@ -64,7 +67,7 @@ button{
     gap: 10px;
     color:$color;
 }
-.books-auidos{
+.card__icons{
     padding: 10px 15px;
     display: flex;
     justify-content: space-between;
@@ -236,10 +239,3 @@ button{
         border-radius: 5px;
     }
 }
-
-.card {
-    background: red;
-    width: 100px;
-    height: 100px;
-}
-
