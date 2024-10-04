@@ -9,29 +9,26 @@
 
   <body>
     <header>
-      <nav class="navbar">
-        <div class="logo">Badiiyat</div>
-        <ul class="nav-links">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Contact</a></li>
-          <!-- Profile dropdown -->
-          <li class="profile-dropdown">
-            <a href="#" class="profile">Profile</a>
-            <ul class="dropdown-menu">
-              <li><a href="#">Account</a></li>
-              <li><a href="#">Settings</a></li>
-              <li><a href="#">Logout</a></li>
+      <div class="container">
+        <div class="header__wrapper">
+          <div class="header-logo">
+            <h1>Badiyat</h1>
+          </div>
+          <div class="header-menu-list">
+            <ul>
+              <li><a href="#">Bosh sahifa</a></li>
+              <li><a href="#">Nasr</a></li>
+              <li><a href="#">Nazm</a></li>
+              <li><a href="#">Maqolalar</a></li>
+              <li><a href="#">Forum</a></li>
             </ul>
-          </li>
-        </ul>
-        <div class="burger">
-          <div class="line1"></div>
-          <div class="line2"></div>
-          <div class="line3"></div>
+            <div class="user-profile-img">
+              <img src="./img/Mask Group.svg" alt="" />
+              <i class="fa-solid fa-angle-down"></i>
+            </div>
+          </div>
         </div>
-      </nav>
+      </div>
     </header>
     <section class="book__list">
       <div class="container">
@@ -40,6 +37,7 @@
         </div>
       </div>
     </section>
+    
     <script type="module" src="/js/app.js"></script>
     <script src="/src/sass/vendors/header.js"></script>
   </body>

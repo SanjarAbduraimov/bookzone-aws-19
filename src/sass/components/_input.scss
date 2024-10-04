@@ -1,6 +1,10 @@
 body{
     background-color: rgba(25, 25, 25, 1);
 }
+@font-face {
+    font-family: Rotterburg;
+    src: url(../../fonts/Rotterburg\ Display\ Font.otf);
+  }
 .search__wrapper{
     max-width: 850px;
     margin: 20px auto;
@@ -15,6 +19,7 @@ body{
 .search-box__title, h1{
     color: rgba(201, 172, 140, 1);
     margin: 0;
+    font-family: Rotterburg;
 }
 .input__wrapper{
     background-color: rgba(64, 64, 64, 1);

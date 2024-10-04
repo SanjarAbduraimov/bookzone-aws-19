@@ -10,6 +10,7 @@ export const fetchAllBooks = async () => {
 };
 
 export const displayAllBooks = (books) => {
+  const main = document.createElement('main');
   const section = document.querySelector("section.book__list");
   let result = "";
   books.forEach((book) => {
@@ -42,4 +43,15 @@ export const displayAllBooks = (books) => {
   </div>`;
   });
   section.innerHTML = result;
+  main.innerHTML = ` <div class="search__wrapper">
+  <div class="search-box__title">
+    <h1>QIDIRISH</h1>
+  </div>
+  <div class="search-input">
+    <div class="input__wrapper">
+      <input type="text" placeholder="Adiblar, kitbolar, audiolar, maqolalar" />
+    </div>
+    <button><i class="fa-solid fa-magnifying-glass"></i> Izlash</button>
+  </div>
+</div>`
 };
